@@ -1,0 +1,17 @@
+CXX = g++
+CXXFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu++17 -g -fsanitize=address
+LDFLAGS =  -fsanitize=address -lGLEW -lGL -lglfw
+LDLIBS= 
+
+SRC = basic.cpp 
+OBJ = $(SRC:.cc=.o)
+EXEC = OpenGL-Program
+
+all: $(EXEC)
+
+$(EXEC): $(OBJ)
+	$(CXX) -std=c++17 $(LDFLAGS) -o $@ $(OBJ) $(LBLIBS)
+
+clean:
+	rm -rf $(OBJ) $(EXEC)
+
