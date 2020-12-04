@@ -15,4 +15,3 @@ $(EXEC): $(OBJ)
 clean:
 	rm -rf $(OBJ) $(EXEC)
 
- 
