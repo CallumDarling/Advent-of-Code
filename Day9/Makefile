@@ -3,7 +3,7 @@ CXXFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu++17 -g
 LDFLAGS =  -fsanitize=address
 LDLIBS= 
 
-SRC = part2.cpp 
+SRC = main.cpp 
 OBJ = $(SRC:.cc=.o)
 EXEC = main
 

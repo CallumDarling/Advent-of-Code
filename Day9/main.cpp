@@ -6,24 +6,13 @@
 
 #include "util.h"
 
-
 using namespace std;
-
-//int arr[] = {9,    9,        9,        9,        9,    9,    1721,
-//           979,  3666,     299,      675,      1451, 2444, 2443,
-//           2445, 45234234, 43324423, 43223443, 4324, 2442};
-
-
-vector<long int> arr = readInLong("input");
-
 
 int main()
 {
+  vector<long int> arr = readInLong("input");
   vector<int> visited;
   int preAmble = 25;
-  for(const auto& num : arr){
-	
-  }
   
   for(std::vector<int>::size_type i = 25; i != arr.size(); i++) {
 	bool passes = false;
